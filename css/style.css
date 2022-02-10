@@ -16,7 +16,7 @@ body {
 .header {
   height: 80vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.523), rgba(0, 0, 0, 0.5)),
-    url(hero.jpg);
+    url(../img/hero.jpg);
   background-position: center;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -64,9 +64,6 @@ body {
   animation-name: btn;
   animation-duration: 1s;
   animation-iteration-count: infinite;
-}
-.header h1 {
-  font-size: 62px;
 }
 
 @keyframes btn {

@@ -1,0 +1,55 @@
+.header {
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.523), rgba(0, 0, 0, 0.5)),
+    url(../img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+  img {
+    width: 10%;
+    padding: 3%;
+  }
+
+  .header__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+    @include center;
+
+    h1 {
+      font-size: 5.2rem;
+      letter-spacing: 0.5rem;
+    }
+
+    a {
+      position: relative;
+      text-decoration: none;
+      border-radius: 2rem;
+      padding: 1% 1%;
+      background-color: white;
+      color: $DarkGreen;
+      width: 30%;
+
+      &::after {
+        display: inline-block;
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 2rem;
+        padding: 1% 1%;
+        background-color: white;
+        color: $DarkGreen;
+        z-index: -1;
+        transition: all 0.5s;
+
+        animation-name: btn;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+    }
+  }
