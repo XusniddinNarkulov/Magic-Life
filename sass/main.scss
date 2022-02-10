@@ -13,10 +13,14 @@ body {
 $lightgreen: #7ed56f;
 $mediumgreen: #55c57a;
 $darkgreen: #28b485;
-
+@mixin center {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 .header {
   height: 80vh;
-  background-image: linear-gradient(rgb(0, 0, 0, 0.523), rgb(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.523), rgba(0, 0, 0, 0.5)),
     url(hero.jpg);
   background-position: center;
   background-size: cover;
@@ -32,9 +36,7 @@ $darkgreen: #28b485;
     flex-direction: column;
     gap: 2rem;
     color: white;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    @include center;
 
     h1 {
       font-size: 5.2rem;
@@ -64,23 +66,25 @@ $darkgreen: #28b485;
         color: $darkgreen;
         z-index: -1;
         transition: all 0.5s;
-      
+
         animation-name: btn;
         animation-duration: 1s;
         animation-iteration-count: infinite;
       }
+    }
+  }
+  h1 {
+    font-size: 62px;
   }
 
+  @keyframes btn {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.3);
+      opacity: 0;
+    }
+  }
 }
-
-@keyframes btn {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.3);
-    opacity: 0;
-  }
-}
-
