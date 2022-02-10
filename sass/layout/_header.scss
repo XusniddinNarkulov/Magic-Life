@@ -19,7 +19,11 @@
     @include center;
 
     h1 {
-      font-size: 5.2rem;
+      font-size: 6.2rem;
+      letter-spacing: 1rem;
+    }
+    h2 {
+      font-size: 3.2rem;
       letter-spacing: 0.5rem;
     }
 
@@ -53,3 +57,4 @@
       }
     }
   }
+}
