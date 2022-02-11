@@ -1,0 +1,30 @@
+.heading-secondary {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  display: inline-block;
+  background-image: linear-gradient(to right, $LightGreen, $DarkGreen);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  transition: all 0.2s;
+  letter-spacing: 0.2rem;
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg);
+    text-shadow: 0 1.5rem 3rem $shadow-color;
+  }
+}
+.heading-tertiary {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: #333;
+}
+.text-box {
+  font-size: 1.6rem;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+  line-height: 1.7;
+  color: #333;
+}

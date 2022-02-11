@@ -1,7 +1,6 @@
 .header {
   height: 80vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.523), rgba(0, 0, 0, 0.5)),
-    url(../img/hero.jpg);
+  background-image: linear-gradient($bg-dark), url(../img/hero.jpg);
   background-position: center;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);

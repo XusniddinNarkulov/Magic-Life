@@ -1,16 +1,16 @@
 .row {
   max-width: $grid-width;
   margin: 0 auto;
-  background-color: purple;
+  // background-color: purple;
   &:not(:last-child) {
     margin-bottom: $space-vertical;
   }
   @include clearfix;
 
   [class^="col-"] {
-    background-color: olive;
+    // background-color: olive;
     float: left;
-    height: 5rem;
+    // height: 5rem;
     &:not(:last-child) {
       margin-right: $space-horizontal;
     }

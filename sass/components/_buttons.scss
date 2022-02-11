@@ -1,0 +1,20 @@
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: 1.6rem;
+    color: $LightGreen;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $LightGreen;
+  }
+  &:hover {
+    color: white;
+    padding: 3px;
+    background-color: $LightGreen;
+    transform: translateY(-0.5rem);
+  }
+  transition: all 0.2s;
+  &:active {
+    transform: translateY(0);
+  }
+}
