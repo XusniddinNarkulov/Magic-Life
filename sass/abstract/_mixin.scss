@@ -10,3 +10,7 @@
     clear: both;
   }
 }
+@mixin bgcenter {
+  background-position: center;
+  background-size: cover;
+}

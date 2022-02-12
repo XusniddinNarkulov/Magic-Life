@@ -29,10 +29,12 @@ body {
     text-align: center; }
     .header .header__text h1 {
       font-size: 6.2rem;
-      letter-spacing: 1rem; }
+      letter-spacing: 1rem;
+      animation: moveRight 1s; }
     .header .header__text h2 {
       font-size: 3.2rem;
-      letter-spacing: 0.5rem; }
+      letter-spacing: 0.5rem;
+      animation: moveLeft 1s; }
     .header .header__text a {
       position: relative;
       text-decoration: none;
@@ -40,7 +42,8 @@ body {
       padding: 1% 1%;
       background-color: white;
       color: #28b485;
-      width: 30%; }
+      width: 30%;
+      animation: moveTop 1s; }
       .header .header__text a::after {
         display: inline-block;
         position: absolute;
@@ -66,6 +69,30 @@ body {
   100% {
     transform: scale(1.3);
     opacity: 0; } }
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(100%);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes moveTop {
+  0% {
+    transform: translateY(100%);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
 
 .row {
   max-width: 114rem;
@@ -146,3 +173,56 @@ body {
     transform: translateY(-0.5rem); }
   .btn-text:active {
     transform: translateY(0); }
+
+.compositions {
+  position: relative; }
+  .compositions img {
+    position: absolute;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 1rem; }
+  .compositions__photo1 {
+    margin-top: -5%; }
+  .compositions__photo2 {
+    margin-left: 50%; }
+  .compositions__photo3 {
+    margin-top: 20%;
+    margin-left: 20%; }
+  .compositions img:hover {
+    outline: 1rem solid #55c57a;
+    outline-offset: 1rem;
+    outline-style: groove;
+    border-radius: 1rem;
+    transform: scale(1.1);
+    z-index: 1;
+    transition: all 0.5s; }
+  .compositions:hover img:not(:hover) {
+    transform: scale(0.9); }
+
+.features {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.523), rgba(0, 0, 0, 0.5)), url(../../img/nat-4.jpg);
+  background-position: center;
+  background-size: cover;
+  transform: skewY(-5deg);
+  height: 90vh;
+  margin-top: -5%; }
+  .features > * {
+    transform: skewY(5deg);
+    text-align: center; }
+  .features .row {
+    padding-top: 12%; }
+    .features .row .col-1-of-4 {
+      background-color: #eee;
+      padding: 2%;
+      border-radius: 0.5rem;
+      opacity: 0.8; }
+      .features .row .col-1-of-4 i {
+        font-size: 5rem;
+        display: inline-block;
+        margin-bottom: 20%;
+        color: transparent;
+        background-image: linear-gradient(to right, #7ed56f, #28b485);
+        background-clip: text;
+        -webkit-background-clip: text; }
+      .features .row .col-1-of-4:hover {
+        transform: scale(1.05) translateY(-5%);
+        transition: all 0.5s; }

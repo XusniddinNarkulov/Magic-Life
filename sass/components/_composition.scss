@@ -1,0 +1,30 @@
+.compositions {
+  position: relative;
+  img {
+    position: absolute;
+    box-shadow: 0 2rem 4rem $shadow-color;
+    border-radius: 1rem;
+  }
+  &__photo1 {
+    margin-top: -5%;
+  }
+  &__photo2 {
+    margin-left: 50%;
+  }
+  &__photo3 {
+    margin-top: 20%;
+    margin-left: 20%;
+  }
+  img:hover {
+    outline: 1rem solid $MediumGreen;
+    outline-offset: 1rem;
+    outline-style: groove;
+    border-radius: 1rem;
+    transform: scale(1.1);
+    z-index: 1;
+    transition: all 0.5s;
+  }
+  &:hover img:not(:hover) {
+    transform: scale(0.9);
+  }
+}
