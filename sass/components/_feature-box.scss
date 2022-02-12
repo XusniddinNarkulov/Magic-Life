@@ -7,17 +7,17 @@
     transform: skewY(5deg);
     text-align: center;
   }
-  height: 90vh;
+  padding: 10%;
   margin-top: -5%;
 
   .row {
-    padding-top: 12%;
+    // padding-top: 12%;
 
     .col-1-of-4 {
       background-color: #eee;
       padding: 2%;
       border-radius: 0.5rem;
-      opacity: 0.8;
+      opacity: 0.9;
       i {
         font-size: 5rem;
         display: inline-block;
