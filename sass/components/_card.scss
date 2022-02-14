@@ -1,6 +1,6 @@
 .card {
   position: relative;
-  height: 70vh;
+  height: 60vh;
   width: 100%;
   perspective: 1500px;
 
@@ -10,6 +10,7 @@
     height: 100%;
     background-color: cornsilk;
     backface-visibility: hidden;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
 
     &--img {
       background-image: url(../../img/nat-5.jpg);
@@ -54,13 +55,13 @@
     &--text {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 20%;
+      gap: 15%;
       @include center;
       padding: 5%;
 
       p {
         border-bottom: 1px solid #eee;
-        padding: 1%;
+        padding: 2%;
       }
     }
   }
@@ -77,6 +78,7 @@
     flex-direction: column;
     gap: 20%;
     @include center;
+    box-shadow: 0 1.5rem 3rem $shadow-color;
 
     a {
       text-decoration: none;
@@ -101,11 +103,12 @@
 
   &:hover &__frontcard {
     transform: rotateY(-180deg);
-    transition: 1s;
+    transition: all 1s;
   }
 
   &:hover &__backcard {
     transform: rotateY(0);
-    transition: 1s;
+    transition: all 1s;
   }
+  transition: all 1s;
 }

@@ -137,7 +137,7 @@ body {
   letter-spacing: 0.2rem; }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg);
-    text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4); }
+    text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.1); }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -178,7 +178,7 @@ body {
   position: relative; }
   .compositions img {
     position: absolute;
-    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
     border-radius: 1rem; }
   .compositions__photo1 {
     margin-top: -5%; }
@@ -229,15 +229,17 @@ body {
 
 .card {
   position: relative;
-  height: 70vh;
+  height: 60vh;
   width: 100%;
-  perspective: 1500px; }
+  perspective: 1500px;
+  transition: all 1s; }
   .card__frontcard {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: cornsilk;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4); }
     .card__frontcard--img {
       background-image: url(../../img/nat-5.jpg);
       background-position: center;
@@ -270,14 +272,14 @@ body {
     .card__frontcard--text {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 20%;
+      gap: 15%;
       align-items: center;
       justify-content: center;
       text-align: center;
       padding: 5%; }
       .card__frontcard--text p {
         border-bottom: 1px solid #eee;
-        padding: 1%; }
+        padding: 2%; }
   .card__backcard {
     position: absolute;
     width: 100%;
@@ -291,7 +293,8 @@ body {
     gap: 20%;
     align-items: center;
     justify-content: center;
-    text-align: center; }
+    text-align: center;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.1); }
     .card__backcard a {
       text-decoration: none;
       color: black;
@@ -308,7 +311,32 @@ body {
     background-color: #2998ff; }
   .card:hover .card__frontcard {
     transform: rotateY(-180deg);
-    transition: 1s; }
+    transition: all 1s; }
   .card:hover .card__backcard {
     transform: rotateY(0);
-    transition: 1s; }
+    transition: all 1s; }
+
+footer {
+  padding: 5%;
+  background-color: #333;
+  color: white;
+  text-align: center; }
+  footer a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    display: inline-block; }
+  footer a:hover {
+    color: #55c57a;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+    transform: skewY(5deg) scale(1.1);
+    padding: 0.5rem; }
+  footer .footer-text {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%; }
+    footer .footer-text__footbar a {
+      margin-left: 2%; }
+    footer .footer-text p {
+      text-align: start; }
