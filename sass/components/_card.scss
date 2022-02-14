@@ -1,0 +1,111 @@
+.card {
+  position: relative;
+  height: 70vh;
+  width: 100%;
+  perspective: 1500px;
+
+  &__frontcard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: cornsilk;
+    backface-visibility: hidden;
+
+    &--img {
+      background-image: url(../../img/nat-5.jpg);
+      @include bgcenter;
+      width: 100%;
+      height: 40%;
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      background-blend-mode: screen;
+    }
+
+    .imgcard1 {
+      background-color: $color-secondary-light-2;
+    }
+    .imgcard2 {
+      background-color: $MediumGreen;
+    }
+    .imgcard3 {
+      background-color: $color-tertiary-light-2;
+    }
+
+    h3 {
+      width: 40%;
+      display: inline-block;
+      text-align: end;
+      margin-left: 50%;
+      color: white;
+
+      padding: 2%;
+      margin-top: -10%;
+      opacity: 0.9;
+    }
+    .h3-1 {
+      background-color: $color-secondary-light-1;
+    }
+    .h3-2 {
+      background-color: $LightGreen;
+    }
+    .h3-3 {
+      background-color: $color-tertiary-light-1;
+    }
+
+    &--text {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20%;
+      @include center;
+      padding: 5%;
+
+      p {
+        border-bottom: 1px solid #eee;
+        padding: 1%;
+      }
+    }
+  }
+
+  &__backcard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: cornsilk;
+    z-index: -1;
+    transform: rotateY(180deg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+    @include center;
+
+    a {
+      text-decoration: none;
+      color: black;
+      padding: 5% 10%;
+      border-radius: 40px;
+      background-color: white;
+    }
+    h1 {
+      font-size: 62px;
+    }
+  }
+  .backcard1 {
+    background-color: $color-secondary-light-1;
+  }
+  .backcard2 {
+    background-color: $LightGreen;
+  }
+  .backcard3 {
+    background-color: $color-tertiary-light-1;
+  }
+
+  &:hover &__frontcard {
+    transform: rotateY(-180deg);
+    transition: 1s;
+  }
+
+  &:hover &__backcard {
+    transform: rotateY(0);
+    transition: 1s;
+  }
+}

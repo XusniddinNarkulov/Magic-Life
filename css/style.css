@@ -204,6 +204,7 @@ body {
   background-position: center;
   background-size: cover;
   transform: skewY(-5deg);
+  margin-bottom: 10%;
   padding: 10%;
   margin-top: -5%; }
   .features > * {
@@ -225,3 +226,89 @@ body {
     .features .row .col-1-of-4:hover {
       transform: scale(1.05) translateY(-5%);
       transition: all 0.5s; }
+
+.card {
+  position: relative;
+  height: 70vh;
+  width: 100%;
+  perspective: 1500px; }
+  .card__frontcard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: cornsilk;
+    backface-visibility: hidden; }
+    .card__frontcard--img {
+      background-image: url(../../img/nat-5.jpg);
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 40%;
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      background-blend-mode: screen; }
+    .card__frontcard .imgcard1 {
+      background-color: #ff7730; }
+    .card__frontcard .imgcard2 {
+      background-color: #55c57a; }
+    .card__frontcard .imgcard3 {
+      background-color: #5643fa; }
+    .card__frontcard h3 {
+      width: 40%;
+      display: inline-block;
+      text-align: end;
+      margin-left: 50%;
+      color: white;
+      padding: 2%;
+      margin-top: -10%;
+      opacity: 0.9; }
+    .card__frontcard .h3-1 {
+      background-color: #ffb900; }
+    .card__frontcard .h3-2 {
+      background-color: #7ed56f; }
+    .card__frontcard .h3-3 {
+      background-color: #2998ff; }
+    .card__frontcard--text {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 5%; }
+      .card__frontcard--text p {
+        border-bottom: 1px solid #eee;
+        padding: 1%; }
+  .card__backcard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: cornsilk;
+    z-index: -1;
+    transform: rotateY(180deg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    .card__backcard a {
+      text-decoration: none;
+      color: black;
+      padding: 5% 10%;
+      border-radius: 40px;
+      background-color: white; }
+    .card__backcard h1 {
+      font-size: 62px; }
+  .card .backcard1 {
+    background-color: #ffb900; }
+  .card .backcard2 {
+    background-color: #7ed56f; }
+  .card .backcard3 {
+    background-color: #2998ff; }
+  .card:hover .card__frontcard {
+    transform: rotateY(-180deg);
+    transition: 1s; }
+  .card:hover .card__backcard {
+    transform: rotateY(0);
+    transition: 1s; }
