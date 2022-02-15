@@ -9,6 +9,24 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="nav-check" />
+      <label for="nav-check" class="navigation__button">Menu</label>
+
+      <div class="navigation__background"></div>
+      <div class="navigation__menu">
+        <ul class="navigation_list">
+          <li class="navigation__item">
+            <a href="" class="navigation_link">01 About us</a>
+            <a href="" class="navigation_link">02 Your Benefits</a>
+            <a href="" class="navigation_link">03 Popular tours</a>
+            <a href="" class="navigation_link">04 Stories</a>
+            <a href="" class="navigation_link">05 Book Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <div class="header">
       <img src="img/logo-white.png" alt="" />
       <div class="header__text">
@@ -128,7 +146,7 @@
 
               <h1>$297</h1>
 
-              <a href="">BUY NOW!</a>
+              <a href="#pop">BUY NOW!</a>
             </div>
           </div>
           <div class="col-1-of-3 card">
@@ -148,7 +166,7 @@
 
               <h1>$297</h1>
 
-              <a href="">BUY NOW!</a>
+              <a href="#pop">BUY NOW!</a>
             </div>
           </div>
           <div class="col-1-of-3 card">
@@ -168,7 +186,7 @@
 
               <h1>$297</h1>
 
-              <a href="">BUY NOW!</a>
+              <a href="#pop">BUY NOW!</a>
             </div>
           </div>
         </div>
@@ -213,6 +231,8 @@
               dolorem voluptatem voluptates beatae temporibus!
             </p>
           </div>
+
+          <a href="" class="btn-text">Read More &rarr;</a>
         </div>
       </section>
     </main>
@@ -236,6 +256,44 @@
         </p>
       </div>
     </footer>
+
+    <div class="popup" id="pop">
+      <div class="popup__content">
+        <div class="popup__content--left">
+          <img src="/img/nat-8.jpg" alt="" width="" />
+          <img src="/img/nat-9.jpg" alt="" width="" />
+        </div>
+
+        <div class="popup__content--right">
+          <h2 class="heading-secondary">Start booking now!</h2>
+          <h3 class="heading__tertiary">
+            Lorem ipsum dolor, sir adipisicing elit.
+          </h3>
+          <div class="popup__content--right-text">
+            <p class="popup__content--right-text-1">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt ad
+              soluta ut! Dolorem earum nisi magnam voluptas vel, exercitationem
+              deserunt natus enim similique delectus voluptate? Vitae corporis
+              harum laboriosam numquam! Lorem ipsum, dolor sit amet consectetur
+              adipisicing elit. Deserunt culpa quibusdam sed facilis eveniet
+              incidunt sapiente eius temporibus itaque, vitae et ex facere modi
+              tenetur velit saepe cumque exercitationem provident!
+            </p>
+            <p class="popup__content--right-text-2">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt ad
+              soluta ut! Dolorem earum nisi magnam voluptas vel, exercitationem
+              deserunt natus enim similique delectus voluptate? Vitae corporis
+              harum laboriosam numquam! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Suscipit laudantium numquam aliquam sequi illo
+              explicabo temporibus quaerat eligendi? Suscipit recusandae, fugit
+              harum sit illo totam. Ab ullam sed impedit! Tenetur!
+            </p>
+
+            <a href="" class="">BOOK NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- <section class="grid-test">
       <div class="row">
         <div class="col-1-of-2">This is a column 1 of 2</div>
