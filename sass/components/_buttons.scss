@@ -18,3 +18,35 @@
     transform: translateY(0);
   }
 }
+.card-section-btn {
+  position: relative;
+  text-decoration: none;
+  border-radius: 2rem;
+  padding: 1% 1%;
+  background-color: $DarkGreen;
+  color: white;
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
+  &::after {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    padding: 1% 1%;
+    background-color: $DarkGreen;
+    color: white;
+    z-index: -1;
+    transition: all 0.5s;
+
+    animation-name: btn;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+}
