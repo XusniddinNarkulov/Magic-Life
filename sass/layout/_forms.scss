@@ -1,0 +1,56 @@
+.form {
+  background-image: linear-gradient(to bottom right, $LightGreen, $DarkGreen);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__bg {
+    background-image: url(/img/nat-10.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    height: 70%;
+
+    &--form {
+      background-image: linear-gradient(rgba(white, 0.9), rgba(white, 0.8));
+      width: 55%;
+      height: 100%;
+      clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+      padding: 5%;
+      padding-right: 10%;
+
+      form {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20%;
+
+        input {
+          padding: 3% 2%;
+          border: 0;
+        }
+        .radio {
+          display: flex;
+          gap: 5%;
+
+          input,
+          label {
+            cursor: pointer;
+          }
+        }
+
+        button {
+          background-color: $DarkGreen;
+          color: white;
+          padding: 3% 5%;
+          width: 40%;
+          border-radius: 4rem;
+          border: 0;
+          font-size: 1.8rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 .card {
   position: relative;
-  height: 80vh;
+  height: 70vh;
   width: 100%;
   perspective: 1500px;
   transition: all 1s;
@@ -9,10 +9,11 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: cornsilk;
+    // background-color: cornsilk;
     backface-visibility: hidden;
-    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
     transition: all 1s;
+    border-radius: 1rem;
 
     &--img {
       background-image: url(../../img/nat-5.jpg);
@@ -39,10 +40,11 @@
       text-align: end;
       margin-left: 50%;
       color: white;
-
+      position: absolute;
       padding: 2%;
-      margin-top: -10%;
+      margin-top: -15%;
       opacity: 0.9;
+      box-decoration-break: clone;
     }
     .h3-1 {
       background-color: $color-secondary-light-1;
@@ -61,7 +63,7 @@
       @include center;
       padding: 5%;
 
-      p {
+      p:not(:last-child) {
         border-bottom: 1px solid #eee;
         padding: 2%;
       }
@@ -72,7 +74,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: cornsilk;
+    // background-color: cornsilk;
     z-index: -1;
     transform: rotateY(180deg);
     color: white;
@@ -80,8 +82,10 @@
     flex-direction: column;
     gap: 20%;
     @include center;
-    box-shadow: 0 1.5rem 3rem $shadow-color;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
     transition: all 1s;
+    backface-visibility: hidden;
+    border-radius: 1rem;
 
     a {
       text-decoration: none;

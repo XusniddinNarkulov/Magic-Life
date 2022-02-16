@@ -2,8 +2,8 @@
   margin-top: 5%;
   background: $bg-dark;
   position: relative;
-  width: 100vw;
-  height: 80vh;
+  // width: 99vw;
+  height: 100vh;
 
   .u-text-center {
     padding-top: 3%;
@@ -13,9 +13,11 @@
   .bgvideo {
     z-index: -1;
     position: absolute;
+    // width: 99vw;
     &__video {
       object-fit: cover;
-      height: 80vh;
+      width: 99vw;
+      height: 100vh;
     }
   }
   .testimonials-grid {
@@ -76,6 +78,7 @@
     .btn-text {
       justify-self: center;
       padding: 1%;
+      border: 2px solid $LightGreen;
     }
   }
 }

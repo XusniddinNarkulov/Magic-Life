@@ -64,6 +64,14 @@
           padding-right: 10%;
         }
       }
+      a {
+        text-decoration: none;
+        color: white;
+        padding: 5% 5%;
+        border-radius: 40px;
+        background-color: $DarkGreen;
+        text-align: center;
+      }
     }
   }
 }
