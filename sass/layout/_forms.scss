@@ -29,6 +29,17 @@
         input {
           padding: 3% 2%;
           border: 0;
+          outline: none;
+
+          &:focus {
+            border-bottom: 2px solid $DarkGreen;
+          }
+          &:invalid {
+            border-bottom: 2px solid red;
+          }
+          &:placeholder-shown {
+            border: 0;
+          }
         }
         .radio {
           display: flex;
@@ -41,7 +52,7 @@
         }
 
         button {
-          background-color: $DarkGreen;
+          background-color: $LightGreen;
           color: white;
           padding: 3% 5%;
           width: 40%;

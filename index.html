@@ -7,6 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- <div class="navigation">
@@ -152,7 +159,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="bookx">
         <div class="u-text-center u-margin-bottom--big">
           <h2 class="heading-secondary">Most popular tours</h2>
         </div>
@@ -229,11 +236,10 @@
             <source src="/img/video.webm" type="video/webm" />
           </video>
         </div>
-        <div class="u-text-center u-margin-bottom--big">
-          <h2 class="heading-secondary">WE MAKE PEOPLE GENUINELY HAPPY</h2>
-        </div>
 
         <div class="testimonials-grid">
+          <h2 class="heading-secondary">WE MAKE PEOPLE GENUINELY HAPPY</h2>
+
           <div class="testimonials__first">
             <div class="testimonials__first--img">
               <img src="/img/nat-8.jpg" alt="" />
@@ -260,7 +266,6 @@
               dolorem voluptatem voluptates beatae temporibus!
             </p>
           </div>
-
           <a href="" class="btn-text">Read More &rarr;</a>
         </div>
       </section>
@@ -270,7 +275,12 @@
           <div class="form__bg--form">
             <form action="">
               <h2 class="heading-secondary">START BOOKING NOW</h2>
-              <input type="text" placeholder="Full Name" required />
+              <input
+                type="text"
+                autocomplete="off"
+                placeholder="Full Name"
+                required
+              />
               <input type="email" placeholder="Email Adress" required />
               <div class="radio">
                 <div class="">
@@ -311,6 +321,7 @@
 
     <div class="popup" id="pop">
       <div class="popup__content">
+        <a class="bookx" href="#bookx"><i class="fa-solid fa-xmark"></i></a>
         <div class="popup__content--left">
           <img src="/img/nat-8.jpg" alt="" width="" />
           <img src="/img/nat-9.jpg" alt="" width="" />

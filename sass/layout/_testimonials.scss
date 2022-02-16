@@ -3,16 +3,18 @@
   background: $bg-dark;
   position: relative;
   // width: 99vw;
-  height: 100vh;
+  height: 90vh;
 
-  .u-text-center {
-    padding-top: 3%;
-    margin-bottom: 3%;
-  }
+  // .u-text-center {
+  //   padding-top: 3%;
+  //   margin-bottom: 3%;
+  // }
 
   .bgvideo {
     z-index: -1;
     position: absolute;
+    overflow: hidden;
+
     // width: 99vw;
     &__video {
       object-fit: cover;
@@ -21,11 +23,20 @@
     }
   }
   .testimonials-grid {
+    width: 70%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: grid;
-    grid-template-columns: 70%;
+    grid-template-columns: 100%;
     align-items: center;
     justify-content: center;
     gap: 10%;
+
+    .heading-secondary {
+      text-align: center;
+    }
     .testimonials__first {
       // height: 25vh;
       background-color: white;
@@ -39,23 +50,33 @@
 
       &--img {
         position: relative;
+        float: left;
+        object-fit: cover;
+        width: 12rem;
+        height: 12rem;
+        clip-path: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        margin-right: 5%;
 
         img {
-          float: left;
+          // float: left;
           object-fit: cover;
           width: 12rem;
           height: 12rem;
-          clip-path: circle(50% at 50% 50%);
-          shape-outside: circle(50% at 50% 50%);
-          margin-right: 5%;
+          transform: scale(1.5);
+          // clip-path: circle(50% at 50% 50%);
+          // shape-outside: circle(50% at 50% 50%);
+          // margin-right: 5%;
         }
         p {
           position: absolute;
-          top: 3rem;
-          left: 1rem;
+          top: 50%;
+          left: 10%;
+
           color: white;
           font-size: 2rem;
           opacity: 0;
+          width: 100%;
         }
       }
       p {
@@ -66,12 +87,12 @@
         img {
           transform: scale(1);
           filter: blur(0.2rem);
-          transition: 0.1s;
+          transition: 0.3s;
         }
         p {
-          top: 2rem;
+          top: 3.5rem;
           opacity: 1;
-          transition: 0.2s;
+          transition: 0.3s;
         }
       }
     }

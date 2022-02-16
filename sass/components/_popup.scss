@@ -34,6 +34,18 @@
     opacity: 0;
     position: absolute;
 
+    .bookx {
+      position: absolute;
+      right: 2%;
+      top: 2%;
+      font-size: 3rem;
+      color: grey;
+
+      &:hover {
+        color: $MediumGreen;
+      }
+    }
+
     &--left {
       display: flex;
       flex-direction: column;
@@ -69,7 +81,7 @@
         color: white;
         padding: 5% 5%;
         border-radius: 40px;
-        background-color: $DarkGreen;
+        background-color: $LightGreen;
         text-align: center;
       }
     }

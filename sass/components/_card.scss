@@ -62,6 +62,7 @@
       gap: 15%;
       @include center;
       padding: 5%;
+      padding-top: 15%;
 
       p:not(:last-child) {
         border-bottom: 1px solid #eee;
