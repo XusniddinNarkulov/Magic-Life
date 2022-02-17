@@ -3,7 +3,7 @@
   background: $bg-dark;
   position: relative;
   // width: 99vw;
-  height: 90vh;
+  height: 100vh;
 
   // .u-text-center {
   //   padding-top: 3%;
@@ -67,6 +67,7 @@
           // clip-path: circle(50% at 50% 50%);
           // shape-outside: circle(50% at 50% 50%);
           // margin-right: 5%;
+          transition: 0.3s;
         }
         p {
           position: absolute;
@@ -77,6 +78,7 @@
           font-size: 2rem;
           opacity: 0;
           width: 100%;
+          transition: 0.3s;
         }
       }
       p {
@@ -87,12 +89,12 @@
         img {
           transform: scale(1);
           filter: blur(0.2rem);
-          transition: 0.3s;
+          // transition: 0.3s;
         }
         p {
           top: 3.5rem;
           opacity: 1;
-          transition: 0.3s;
+          // transition: 0.3s;
         }
       }
     }

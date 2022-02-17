@@ -306,7 +306,7 @@ body {
     .card__frontcard--text {
       display: grid;
       grid-template-columns: 1fr;
-      gap: 15%;
+      gap: 10%;
       align-items: center;
       justify-content: center;
       text-align: center;
@@ -383,7 +383,7 @@ footer {
   margin-top: 5%;
   background: linear-gradient(rgba(0, 0, 0, 0.523), rgba(0, 0, 0, 0.5));
   position: relative;
-  height: 90vh; }
+  height: 100vh; }
   .testimonials .bgvideo {
     z-index: -1;
     position: absolute;
@@ -425,7 +425,8 @@ footer {
           object-fit: cover;
           width: 12rem;
           height: 12rem;
-          transform: scale(1.5); }
+          transform: scale(1.5);
+          transition: 0.3s; }
         .testimonials .testimonials-grid .testimonials__first--img p {
           position: absolute;
           top: 50%;
@@ -433,18 +434,17 @@ footer {
           color: white;
           font-size: 2rem;
           opacity: 0;
-          width: 100%; }
+          width: 100%;
+          transition: 0.3s; }
       .testimonials .testimonials-grid .testimonials__first p {
         margin-top: 2%;
         line-height: 2; }
       .testimonials .testimonials-grid .testimonials__first:hover img {
         transform: scale(1);
-        filter: blur(0.2rem);
-        transition: 0.3s; }
+        filter: blur(0.2rem); }
       .testimonials .testimonials-grid .testimonials__first:hover p {
         top: 3.5rem;
-        opacity: 1;
-        transition: 0.3s; }
+        opacity: 1; }
     .testimonials .testimonials-grid .btn-text {
       justify-self: center;
       padding: 1%;
